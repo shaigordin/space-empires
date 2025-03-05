@@ -1,0 +1,192 @@
+---
+title: "Mapping Historical Places Using StoryMap JS"
+author: "Shai Gordin"
+date: "March 2025"
+format:
+  revealjs:
+    slide-number: true
+    transition: fade
+    theme: night
+    progress: true
+    toc: true
+---
+
+## 🗺️ **Introduction to Georeferencing**
+  
+::: {.columns}
+  
+:::: {.column width="60%"}
+**What is Georeferencing?**
+- Assigning **geographic coordinates** to a historical map or raster image.
+- Aligns old maps with modern **GIS data**.
+- Helps track **spatial changes** over time.
+
+**Why does it matter?**
+- Enables **historical storytelling** using spatial data.
+- Facilitates **comparisons** between past and present geographies.
+
+::: {.callout-tip}
+💡 **Example**: Overlaying a 17th-century map of Jerusalem onto Google Maps to analyze urban changes.
+:::
+::::
+
+:::: {.column width="40%"}
+![Georeferencing Example](https://upload.wikimedia.org/wikipedia/commons/1/1c/QGIS_Georeferencer.png)
+*Source: Wikimedia Commons*
+::::
+  
+:::
+
+---
+
+## 🎭 **Introduction to StoryMap JS**
+  
+::: {.columns}
+
+:::: {.column width="60%"}
+### 🔍 **What is StoryMap JS?**
+- A **free, open-source** storytelling tool by [Knight Lab](https://knightlab.northwestern.edu/).
+- Allows **interactive narratives** on a **map-based timeline**.
+- Combines **text, media, and geolocation**.
+
+**Key Features**
+✔ Integrates **historical & modern maps**  
+✔ Connects **text & media** (images, video, audio)  
+✔ Creates a **sequential story** across different locations  
+
+::: {.callout-warning}
+⚠ **Note**: StoryMap JS is **not a GIS tool**—it’s built for storytelling, not deep spatial analysis.
+:::
+::::
+
+:::: {.column width="40%"}
+![StoryMap JS Example](https://storymap.knightlab.com/static/img/storymapjs.png)
+*Source: Knight Lab*
+::::
+  
+:::
+
+---
+
+## 📜 **Planning Your Narrative**
+  
+**Before You Start, Prepare:**
+1️⃣ A list of **historical locations**  
+2️⃣ A **timeline or sequence** of events  
+3️⃣ Images, videos, or **primary sources**  
+4️⃣ A **georeferenced historical map**  
+
+::: {.callout-note}
+🎯 **Example Use Case**: Mapping the spread of the Roman Empire, with each slide representing a key conquest.
+:::
+
+---
+
+## 🔗 **Step 1: Getting a Georeferenced Map**
+  
+### 🗂️ Using Map Warper
+- Go to **[Map Warper](https://mapwarper.net/)**
+- Upload a **historical map** (e.g., Ottoman Palestine)
+- **Georeference** it by assigning known points
+- Export **Tiles URL** (in format: `https://mapwarper.net/maps/tile/XXXX/{z}/{x}/{y}.png`)
+
+![Map Warper UI](https://mapwarper.net/assets/warp-steps.png)
+
+::: {.callout-tip}
+💡 **Tip**: Use at least **4 control points** for accurate alignment.
+:::
+
+---
+
+## ✨ **Step 2: Creating a StoryMap**
+  
+1️⃣ Visit [StoryMap JS](https://storymap.knightlab.com/)  
+2️⃣ **Log in with Google**  
+3️⃣ Click **"Make a StoryMap"**  
+4️⃣ Enter a **title & description**  
+
+::: {.callout-caution}
+⚠ If you don’t have a Google account, you can **self-host** StoryMap JS ([GitHub repo](https://github.com/NUKnightLab/StoryMapJS)).
+:::
+
+---
+
+## 🗺️ **Step 3: Adding a Custom Map**
+  
+### 🔧 Using the Tiles URL
+1️⃣ Click **"Options"**  
+2️⃣ Select **"Custom" map type**  
+3️⃣ Paste your **Tiles URL** from Map Warper  
+4️⃣ Click **"Apply"**  
+
+::: {.columns}
+:::: {.column width="50%"}
+### 📌 **Example**
+A **georeferenced Ottoman map** loaded into StoryMap JS:
+
+![StoryMap UI](https://storymap.knightlab.com/static/img/storymap-screenshot.png)
+::::
+:::: {.column width="50%"}
+### 🌍 **Outcome**
+- The historical map will replace the default basemap.
+- You can **zoom & pan** to explore locations.
+::::
+:::
+
+---
+
+## 🏛️ **Step 4: Adding Historical Locations**
+  
+**For Each Location:**
+1️⃣ Click **"Add Slide"**  
+2️⃣ Enter **place name** (or manually adjust)  
+3️⃣ Add **text & media** (images, audio, videos)  
+4️⃣ Use the **marker tool** to position precisely  
+
+::: {.callout-note}
+📝 **Example**: Mapping **ancient trade routes**, with each stop containing artifacts and historical descriptions.
+:::
+
+---
+
+## 🎨 **Step 5: Customizing Your StoryMap**
+  
+### 📌 **Customization Options**
+✔ **Remove Route Lines** (for non-sequential stories)  
+✔ **Customize Marker Icons** (colors, shapes)  
+✔ **Change Background & Theme**  
+
+![StoryMap Customization](https://knightlab.northwestern.edu/assets/storymap2.png)
+
+::: {.callout-warning}
+⚠ **Preview Your StoryMap** before publishing to check for errors!
+:::
+
+---
+
+## ✅ **Publishing & Sharing**
+  
+### 📤 **How to Publish**
+1️⃣ Click **"Publish"**  
+2️⃣ Copy the **embed link** or **share URL**  
+3️⃣ Embed into a **website, blog, or Quarto page**  
+
+🔗 **Example:** [StoryMap of the Byzantine Empire](https://uploads.knightlab.com/storymapjs/e5678e/index.html)  
+
+---
+
+## 📚 **Further Resources**
+  
+📖 [StoryMap JS Official Guide](https://storymap.knightlab.com/)  
+🗺️ [Map Warper for Historical Maps](https://mapwarper.net/)  
+📜 [More Digital Humanities Mapping Tools](https://programminghistorian.org/en/)  
+
+---
+
+## 🎤 **Q&A Session**
+  
+🤔 **Any questions?**  
+🗺️ **What historical maps would you like to georeference?**  
+💬 **Discussion: How can we improve storytelling in digital history?**
+
+

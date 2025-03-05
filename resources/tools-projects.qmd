@@ -1,0 +1,21 @@
+---
+title: "כלים ופרויקטים דיגיטליים"
+---
+
+*Earth Resources Observation and Science (EROS) Center*:\
+<https://www.usgs.gov/centers/eros/science/usgs-eros-archive-products-overview?qt-science_center_objects=0#qt-science_center_objects>
+
+*Data Management and Information Distribution*:\
+<https://lta.cr.usgs.gov/EEHelp/ee_help>
+
+*Register for an Earthdata*:\
+<https://urs.earthdata.nasa.gov//users/new>
+
+National Geospatial-Intelligence Agency (NGA):\
+<https://www.nga.mil/ProductsServices/Pages/PublicProducts.aspx>
+
+Corona Atlas & Referencing System:\
+<https://corona.cast.uark.edu/>
+
+עמוד ענן:\
+<https://amudanan.co.il/>
