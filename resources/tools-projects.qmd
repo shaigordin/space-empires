@@ -2,6 +2,9 @@
 title: "כלים ופרויקטים דיגיטליים"
 ---
 
+StorymapJS - Changing Basemaps\
+<https://guides.library.ucsc.edu/DS/Resources/StoryMapsBasemap>
+
 *Earth Resources Observation and Science (EROS) Center*:\
 <https://www.usgs.gov/centers/eros/science/usgs-eros-archive-products-overview?qt-science_center_objects=0#qt-science_center_objects>
 
