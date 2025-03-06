@@ -1,24 +1,50 @@
 ---
-title: "כלים ופרויקטים דיגיטליים"
+title: "כלים ופרויקטים דיגיטליים של מיפוי"
 ---
 
-StorymapJS - Changing Basemaps\
-<https://guides.library.ucsc.edu/DS/Resources/StoryMapsBasemap>
+## StoryMaps
 
-*Earth Resources Observation and Science (EROS) Center*:\
-<https://www.usgs.gov/centers/eros/science/usgs-eros-archive-products-overview?qt-science_center_objects=0#qt-science_center_objects>
+-   StorymapJS - Changing Basemaps\
+    <https://guides.library.ucsc.edu/DS/Resources/StoryMapsBasemap>
 
-*Data Management and Information Distribution*:\
-<https://lta.cr.usgs.gov/EEHelp/ee_help>
+-   StoryMaps: A Brief Tutorial\
+    <https://digitalorientalist.com/2021/01/12/storymaps-a-brief-tutorial/>
 
-*Register for an Earthdata*:\
-<https://urs.earthdata.nasa.gov//users/new>
+## Placenames and Gazetteers
 
-National Geospatial-Intelligence Agency (NGA):\
-<https://www.nga.mil/ProductsServices/Pages/PublicProducts.aspx>
+-   Pedersen ANE placenames\
+    Data: Pedersen, O. (2007). ANE Site Placemarks for Google Earth (Version 10) \[Data set\]. Zenodo. <https://doi.org/10.5281/zenodo.6384045> \
+    Map: <https://www.arcgis.com/apps/mapviewer/index.html?webmap=38be0d419eb4498d83bf7abb089ff2de>
 
-Corona Atlas & Referencing System:\
-<https://corona.cast.uark.edu/>
+-   *Cuneiform Inscriptions Geographial Site* (CIGS)\
+    Data: Rattenborg, R., Johansson, C., Melin-Kronsell, N., Nett, S., Smidt, G. R., & Andersson, J. (2024). Cuneiform Inscriptions Geographical Site Index (CIGS) (1.7) \[Data set\]. Zenodo. <https://doi.org/10.5281/zenodo.14568765>\
+    GitHub: <https://github.com/glow-gh/cigs>
 
-עמוד ענן:\
-<https://amudanan.co.il/>
+-   Mesopotamian Ancient Place-names Almanac (MAPA)\
+    Gordin, Sh. & Clark, S. (2022). Mesopotamian Ancient Place-names Almanac (v1.0) \[Data set\]. Zenodo. <https://doi.org/10.5281/zenodo.6411251>
+
+-   *Pleiades* is a community-built gazetteer and graph of ancient places\
+    <https://pleiades.stoa.org/>
+
+-   Web mapping service GeoNames is geographical database covers all countries and contains over eleven million placenames that are available for download free of charge\
+    <https://www.geonames.org/>
+
+## Satellite imagery and GIS data services
+
+-   *Earth Resources Observation and Science (EROS) Center*:\
+    <https://www.usgs.gov/centers/eros/science/usgs-eros-archive-products-overview?qt-science_center_objects=0#qt-science_center_objects>
+
+-   *Data Management and Information Distribution*:\
+    <https://lta.cr.usgs.gov/EEHelp/ee_help>
+
+-   *Register for an Earthdata*:\
+    <https://urs.earthdata.nasa.gov//users/new>
+
+-   National Geospatial-Intelligence Agency (NGA):\
+    <https://www.nga.mil/ProductsServices/Pages/PublicProducts.aspx>
+
+-   Corona Atlas & Referencing System:\
+    <https://corona.cast.uark.edu/>
+
+-   עמוד ענן:\
+    <https://amudanan.co.il/>
