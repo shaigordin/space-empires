@@ -8,6 +8,8 @@ title: "רשימת מקורות"
 
 \*Jotheri, Jaafar and Allen, Mark B. (2020) Recognition of ancient channels and archaeological sites in the Mesopotamian floodplain using satellite imagery and digital topography. In *New agendas in remote sensing and landscape archaeology in the Near East : studies in honour of Tony J. Wilkinson*. Oxford: Archaeopress, pp. 283-305.
 
+\*Howland MD, Liss B, Levy TE, Najjar M. Integrating Digital Datasets into Public Engagement through ArcGIS StoryMaps. *Advances in Archaeological Practice*. 2020;8(4):351-360. doi:10.1017/aap.2020.14
+
 Radner, K. 2015. *Ancient Assyria: A Very Short Introduction*. Oxford. Pp. 1-44.
 
 2.  **המאה ה-9 לפנה"ס וההתפשטות האשורית מערבה**
