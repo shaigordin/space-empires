@@ -13,7 +13,7 @@ title: "כלים ופרויקטים דיגיטליים של מיפוי"
 ## Placenames and Gazetteers
 
 -   Pedersen ANE placenames\
-    Data: Pedersen, O. (2007). ANE Site Placemarks for Google Earth (Version 10) \[Data set\]. Zenodo. <https://doi.org/10.5281/zenodo.6384045> \
+    Data: Pedersen, O. (2007). ANE Site Placemarks for Google Earth (Version 10) \[Data set\]. Zenodo. <https://doi.org/10.5281/zenodo.6384045>\
     Map: <https://www.arcgis.com/apps/mapviewer/index.html?webmap=38be0d419eb4498d83bf7abb089ff2de>
 
 -   *Cuneiform Inscriptions Geographial Site* (CIGS)\
