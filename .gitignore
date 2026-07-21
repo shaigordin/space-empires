@@ -10,3 +10,9 @@
 .RData
 .Ruserdata
 *.Rproj
+
+/.luarc.json
+
+# Offline syllabus: kept locally as the source for a Word document, not published
+syllabus.qmd
+*.docx

@@ -67,6 +67,26 @@ end
 
 local HEADERS = { "מס'", "תאריך ושעה", "נושא השיעור", "חומרי קריאה", "משימות", "הערות" }
 
+-- Convert the small subset of HTML used in the CSV cells to Markdown, so that
+-- non-HTML outputs (docx, pdf, …) render real links/emphasis rather than losing
+-- the raw HTML block.
+local function html_to_md(s)
+  if not s or s == "" then return "" end
+  s = s:gsub("<a%s+href='(.-)'.->(.-)</a>", "[%2](%1)")
+  s = s:gsub('<a%s+href="(.-)".->(.-)</a>', "[%2](%1)")
+  s = s:gsub("<strong>(.-)</strong>", "**%1**")
+  s = s:gsub("<em>(.-)</em>", "*%1*")
+  s = s:gsub("<br%s*/?>", " ")
+  s = s:gsub("%b<>", "")            -- strip any remaining tags
+  s = s:gsub("|", "\\|")            -- escape pipe so it can't break the table
+  -- Collapse/trim ASCII whitespace only. Never use %s here: under the C locale
+  -- it matches byte 0xA0, which is the second byte of נ (D7 A0) and other
+  -- Hebrew letters, corrupting the UTF-8 stream.
+  s = s:gsub("[ \t\r\n]+", " ")
+  s = s:gsub("^[ \t\r\n]+", ""):gsub("[ \t\r\n]+$", "")
+  return s
+end
+
 function Div(el)
   if not el.classes:includes("schedule-csv") then return nil end
   local file = el.attributes["file"] or "schedule.csv"
@@ -83,6 +103,31 @@ function Div(el)
   local function cell(r, name)
     local j = idx[name]
     return (j and r[j]) or ""
+  end
+
+  -- Non-HTML formats (e.g. Word/.docx): emit a native Pandoc table so it
+  -- survives conversion, built by parsing a Markdown pipe table.
+  if not (FORMAT and FORMAT:match("html")) then
+    local md = { "| " .. table.concat(HEADERS, " | ") .. " |",
+                 "|:--|:--|:--|:--|:--|:--|" }
+    for i = 2, #rows do
+      local r = rows[i]
+      if cell(r, "date") ~= "" then
+        local topic = html_to_md(cell(r, "topic"))
+        local topic_url = cell(r, "topic_url")
+        if topic_url ~= "" then topic = "[" .. topic .. "](" .. topic_url .. ")" end
+        local datemd = "**" .. cell(r, "date") .. "** · יום " ..
+          cell(r, "day") .. "׳ · " .. cell(r, "time")
+        local unit_topic = "**" .. cell(r, "unit") .. ":** " .. topic
+        md[#md + 1] = "| " .. table.concat({
+          cell(r, "meeting"), datemd, unit_topic,
+          html_to_md(cell(r, "materials")),
+          html_to_md(cell(r, "task")),
+          html_to_md(cell(r, "note"))
+        }, " | ") .. " |"
+      end
+    end
+    return pandoc.read(table.concat(md, "\n"), "markdown").blocks
   end
 
   local h = {}

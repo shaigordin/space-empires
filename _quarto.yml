@@ -3,6 +3,12 @@ project:
   output-dir: docs
   resources:
     - datasets/assyrian_sites_starter.csv
+  # syllabus.qmd is intentionally excluded — it is the source for an offline
+  # Word document, not a web page.
+  render:
+    - "*.qmd"
+    - "resources/*.qmd"
+    - "!syllabus.qmd"
 
 filters:
   - filters/schedule.lua
@@ -14,8 +20,6 @@ website:
   navbar:
     logo: ariel_logo_navbar.png
     right:
-      - text: "סילבוס"
-        href: syllabus.qmd
       - text: "תכנית הקורס"
         href: about.qmd
       - text: "מטלות"
