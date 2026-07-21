@@ -1,18 +1,18 @@
-name_en,ancient_name,modern_location,country,latitude,longitude,category,notes
-Nineveh,Ninua,Kuyunjik / Mosul,Iraq,36.360,43.152,Assyrian capital,Capital under Sennacherib; extensive irrigation works
-Nimrud,Kalhu,Selamiyah / Mosul,Iraq,36.098,43.328,Assyrian capital,Capital under Ashurnasirpal II; NW palace
-Khorsabad,Dur-Sharrukin,Khorsabad,Iraq,36.509,43.229,Assyrian capital,Founded by Sargon II
-Assur,Assur,Qalat Sherqat,Iraq,35.457,43.259,Assyrian religious capital,Cult centre of the god Ashur
-Erbil,Arbela,Erbil,Iraq,36.191,44.009,Assyrian provincial centre,Ishtar of Arbela; continuously inhabited
-Ziyaret Tepe,Tushhan,Ziyaret Tepe,Turkey,37.774,40.996,Assyrian provincial capital,Provincial capital on the upper Tigris
-Harran,Harranu,Harran,Turkey,36.864,39.031,Cult / city,Sin (moon-god) temple; last Assyrian stronghold
-Carchemish,Karkamis,Jerablus,Syria/Turkey border,36.829,38.015,Neo-Hittite / Luwian,Key crossing of the Euphrates
-Zincirli,Samal,Zincirli Hoyuk,Turkey,37.104,36.680,Aramean / Luwian capital,Capital of the kingdom of Samal
-Tell Ahmar,Til Barsip / Kar-Shalmaneser,Tell Ahmar,Syria,36.674,38.121,Aramean / Assyrian,Bit Adini; renamed after Assyrian conquest
-Tell Halaf,Guzana,Tell Halaf,Syria,36.828,40.043,Aramean (Bit Bahiani),Excavated by Max von Oppenheim
-Tell Rifaat,Arpad,Tell Rifaat,Syria,36.470,37.100,Aramean (Bit Agusi),Besieged by Tiglath-pileser III
-Hama,Hamath,Hama,Syria,35.133,36.753,Aramean / Luwian kingdom,Kingdom on the Orontes
-Damascus,Dimashqu,Damascus,Syria,33.513,36.292,Aramean kingdom,Aram-Damascus; conquered 732 BCE
-Samaria,Samerina,Sebastia,West Bank,32.280,35.190,Israelite capital / Assyrian province,Fell to Assyria 722/720 BCE
-Lachish,Lakisu,Tell ed-Duweir,Israel,31.565,34.849,Judahite city,Depicted in Sennacherib's Lachish reliefs
-Babylon,Babili,Hillah,Iraq,32.542,44.421,Babylonian capital,Southern rival and later conqueror of Assyria
+name_en,ancient_name,modern_location,country,latitude,longitude,category,pleiades_id,pleiades_uri,notes
+Nineveh,Ninua,Kuyunjik / Mosul,Iraq,36.36076,43.15994,Assyrian capital,874621,https://pleiades.stoa.org/places/874621,Capital under Sennacherib; extensive irrigation works
+Nimrud,Kalhu,Selamiyah / Mosul,Iraq,36.09998,43.33154,Assyrian capital,894019,https://pleiades.stoa.org/places/894019,Capital under Ashurnasirpal II; NW palace
+Khorsabad,Dur-Sharrukin,Khorsabad,Iraq,36.50662,43.23141,Assyrian capital,874458,https://pleiades.stoa.org/places/874458,Founded by Sargon II
+Assur,Assur,Qalat Sherqat,Iraq,35.45557,43.26130,Assyrian religious capital,893945,https://pleiades.stoa.org/places/893945,Cult centre of the god Ashur
+Erbil,Arbela,Erbil,Iraq,36.19132,44.00938,Assyrian provincial centre,874341,https://pleiades.stoa.org/places/874341,Ishtar of Arbela; continuously inhabited
+Ziyaret Tepe,Tushhan,Ziyaret Tepe,Turkey,37.79362,40.79299,Assyrian provincial capital,986129162,https://pleiades.stoa.org/places/986129162,Provincial capital on the upper Tigris
+Harran,Harranu,Harran,Turkey,36.86359,39.03075,Cult / city,658427,https://pleiades.stoa.org/places/658427,Sin (moon-god) temple; last Assyrian stronghold
+Carchemish,Karkamis,Jerablus,Syria/Turkey border,36.82942,38.01492,Neo-Hittite / Luwian,658465,https://pleiades.stoa.org/places/658465,Key crossing of the Euphrates
+Zincirli,Samal,Zincirli Hoyuk,Turkey,37.10319,36.67833,Aramean / Luwian capital,192555966,https://pleiades.stoa.org/places/192555966,Capital of the kingdom of Samal
+Til Barsip,Til-Barsip / Kar-Shalmaneser (cl. Bersiba),Tell Ahmar,Syria,36.67423,38.12092,Aramean / Assyrian,658410,https://pleiades.stoa.org/places/658410,Bit Adini; renamed after Assyrian conquest
+Tell Halaf,Guzana,Tell Halaf,Syria,36.82673,40.03968,Aramean (Bit Bahiani),874739,https://pleiades.stoa.org/places/874739,Excavated by Max von Oppenheim
+Tell Rifaat,Arpad (Arpadda),Tell Rifaat,Syria,36.47258,37.09474,Aramean (Bit Agusi),122919705,https://pleiades.stoa.org/places/122919705,Besieged by Tiglath-pileser III
+Hama,Hamath (cl. Amathe/Epiphaneia),Hama,Syria,35.13297,36.74880,Aramean / Luwian kingdom,668182,https://pleiades.stoa.org/places/668182,Kingdom on the Orontes
+Damascus,Dimashqu,Damascus,Syria,33.51161,36.30910,Aramean kingdom,678106,https://pleiades.stoa.org/places/678106,Aram-Damascus; conquered 732 BCE
+Samaria,Samerina (cl. Sebaste),Sebastia,West Bank,32.27645,35.19008,Israelite capital / Assyrian province,678370,https://pleiades.stoa.org/places/678370,Fell to Assyria 722/720 BCE
+Lachish,Lakisu,Tell ed-Duweir,Israel,31.56552,34.84919,Judahite city,687951,https://pleiades.stoa.org/places/687951,Depicted in Sennacherib's Lachish reliefs
+Babylon,Babili,Hillah,Iraq,32.53730,44.42498,Babylonian capital,893951,https://pleiades.stoa.org/places/893951,Southern rival and later conqueror of Assyria
