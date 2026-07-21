@@ -2,13 +2,40 @@
 title: "כלים ופרויקטים דיגיטליים של מיפוי"
 ---
 
-## StoryMaps
+## StoryMaps — כלים ליצירת סיפורי מפה
 
--   StorymapJS - Changing Basemaps\
-    <https://guides.library.ucsc.edu/DS/Resources/StoryMapsBasemap>
+**מומלץ (הכלי המוביל כיום):**
 
--   StoryMaps: A Brief Tutorial\
-    <https://digitalorientalist.com/2021/01/12/storymaps-a-brief-tutorial/>
+-   **ArcGIS StoryMaps (Esri)** — נתמך באופן פעיל, חינמי עם חשבון ArcGIS ציבורי, ללא צורך בקוד; תמיכה במפות אינטראקטיביות, סיורי מפה מודרכים (Map Tour), גרפים ומדיה.\
+    כלי: <https://storymaps.arcgis.com/>\
+    התחלה: <https://storymaps.arcgis.com/stories/cea22a609a1d4366897927d0c7d7aac1>
+
+**חלופות:**
+
+-   **Knight Lab StoryMap JS** — חינמי, קוד-פתוח וקל ללמידה; מתאים במיוחד להצגת מפה היסטורית מג׳יאורפרנסת (עם Map Warper). עדיין בגרסת בטא עם תמיכה מוגבלת.\
+    <https://storymap.knightlab.com/>
+
+-   **Felt** — כלי מיפוי שיתופי מודרני וידידותי מאוד, עם שכבת חינם ותצוגות מודרכות דמויות-סיפור.\
+    <https://felt.com/>
+
+-   **Mapbox GL Storytelling** — תבנית גמישה לסיפורי מפה מותאמים אישית (למתקדמים).\
+    <https://www.mapbox.com/storytelling>
+
+**מדריכים:**
+
+-   StoryMap JS — Changing Basemaps: <https://guides.library.ucsc.edu/DS/Resources/StoryMapsBasemap>
+-   StoryMaps: A Brief Tutorial (The Digital Orientalist): <https://digitalorientalist.com/2021/01/12/storymaps-a-brief-tutorial/>
+-   Re-imagining Assignments in the DH Classroom — StoryMaps: <https://review.gale.com/2023/09/19/re-imagining-assignments-in-the-dh-classroom-storymaps/>
+
+## מערכי נתונים לעבודת ה-Story Map
+
+כדי לעבוד באופן מרחבי ולשלב שכבות במפה שלכם, מומלץ לצאת מנקודת פתיחה של אתרים היסטוריים עם קואורדינטות, ולהעשיר אותם מתוך ה-gazetteers שברשימה למטה.
+
+-   **מערך פתיחה — אתרים נאו-אשוריים, ארמים ולוויים**: קובץ CSV מוכן לייבוא ישיר ל-ArcGIS StoryMaps / Knight Lab, הכולל אתרים מרכזיים (בירות אשור, ממלכות ארם והלווים, אתרים בלבאנט) עם קו רוחב/אורך.\
+    הורדה: [`assyrian_sites_starter.csv`](/datasets/assyrian_sites_starter.csv)\
+    ⚠ הקואורדינטות מקורבות ומיועדות כנקודת פתיחה לתרגול — אמתו והשלימו מול *Pleiades* / *MAPA* / *CIGS*.
+
+**זרימת עבודה מומלצת:** בחרו שאלת מחקר מרחבית → אספו אתרים רלוונטיים מתוך ה-gazetteers (הורדה כ-CSV או GeoJSON) → העלו כשכבה ל-[ArcGIS Online](https://www.arcgis.com/) / כטבלה ל-StoryMap → הוסיפו טקסט, תמונות לוויין ומדיה → פרסמו.
 
 ## Placenames and Gazetteers
 

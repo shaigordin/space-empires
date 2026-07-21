@@ -15,9 +15,52 @@ body {
   color: #00FF00; */
 }
 
-Headings 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: black;
+}
+
+/* CSV-driven schedule table (about.qmd) */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.95em;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #d0d0d0;
+  padding: 10px 12px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.schedule-table thead th {
+  background-color: #2c3e50;
+  color: #fff;
+  font-weight: 700;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+.schedule-table tbody tr:hover {
+  background-color: #eef4fb;
+}
+
+.schedule-table td:first-child {
+  text-align: center;
+  font-weight: 700;
+  width: 2.5em;
+  color: #2c3e50;
+}
+
+.sched-date { font-weight: 700; }
+.sched-day, .sched-time {
+  font-size: 0.85em;
+  color: #555;
 }
 
 /* Headings and other elements */

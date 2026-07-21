@@ -1,6 +1,12 @@
+# Quarto
+/.quarto/
+
+# macOS
+.DS_Store
+
+# R / RStudio (legacy — no longer used)
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-
-/.quarto/
+*.Rproj

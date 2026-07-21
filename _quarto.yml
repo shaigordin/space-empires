@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - datasets/assyrian_sites_starter.csv
+
+filters:
+  - filters/schedule.lua
 
 website:
   title: "אימפריות עתיקות מהחלל / שי גורדין"
@@ -21,7 +26,7 @@ website:
             href: resources/tools-projects.qmd
   page-footer:
     background: light
-    left: "© Shai Gordin, 2024"
+    left: "© Shai Gordin, 2026"
     right:
       - icon: github
         href: https://github.com/shaigordin

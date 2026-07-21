@@ -1,7 +1,7 @@
 ---
-title: "Mapping Historical Places Using StoryMap JS"
+title: "Mapping Historical Places with Story Maps"
 author: "Shai Gordin"
-date: "March 2025"
+date: "July 2026"
 format:
   revealjs:
     slide-number: true
@@ -9,6 +9,39 @@ format:
     theme: night
     progress: true
     toc: true
+---
+
+## 🧭 **Which Story Map tool should you use?**
+
+::: {.columns}
+
+:::: {.column width="50%"}
+### ⭐ ArcGIS StoryMaps *(recommended)*
+- Actively maintained by **Esri** — the current classroom standard.
+- **Free** with a public ArcGIS account.
+- No-code, robust: guided map tours, interactive maps, charts, media.
+- Best for **spatial analysis + narrative** together.
+
+🔗 [storymaps.arcgis.com](https://storymaps.arcgis.com/)
+::::
+
+:::: {.column width="50%"}
+### 🪶 Knight Lab StoryMap JS *(lightweight alternative)*
+- Free, open-source, learn in ~10 minutes.
+- Great for **georeferenced historical maps** (via Map Warper).
+- Still **beta**, limited support.
+
+🔗 [storymap.knightlab.com](https://storymap.knightlab.com/)
+
+*Also worth a look:* [Felt](https://felt.com/) — modern, friendly, collaborative web maps.
+::::
+
+:::
+
+::: {.callout-tip}
+💡 For this course, **start with ArcGIS StoryMaps**. Use Knight Lab if your project centers on overlaying a single georeferenced historical map.
+:::
+
 ---
 
 ## 🗺️ **Introduction to Georeferencing**
@@ -175,11 +208,28 @@ A **georeferenced Ottoman map** loaded into StoryMap JS:
 
 ---
 
+## ⭐ **Quick-start: ArcGIS StoryMaps**
+
+1️⃣ Create a **free public ArcGIS account** at [storymaps.arcgis.com](https://storymaps.arcgis.com/)
+2️⃣ Click **"New story"** → choose a blank story or a **guided Map Tour**
+3️⃣ Add a **cover**, then build with **text, media, and map blocks**
+4️⃣ Insert an **Express Map** to draw points, routes and areas directly
+5️⃣ Add your own layers (CSV of coordinates, GeoJSON) via **ArcGIS Online**
+6️⃣ **Design** → pick a theme → **Publish** and share the link
+
+::: {.callout-tip}
+💡 Use the **Map Tour** builder for sequential narratives (e.g. an Assyrian campaign route or a tour of the imperial capitals).
+:::
+
+---
+
 ## 📚 **Further Resources**
-  
-📖 [StoryMap JS Official Guide](https://storymap.knightlab.com/)  
-🗺️ [Map Warper for Historical Maps](https://mapwarper.net/)  
-📜 [More Digital Humanities Mapping Tools](https://programminghistorian.org/en/)  
+
+📖 [ArcGIS StoryMaps — Getting started](https://storymaps.arcgis.com/stories/cea22a609a1d4366897927d0c7d7aac1)
+📖 [StoryMap JS Official Guide](https://storymap.knightlab.com/)
+🗺️ [Map Warper for Historical Maps](https://mapwarper.net/)
+🌍 [Felt — collaborative web maps](https://felt.com/)
+📜 [More Digital Humanities Mapping Tools](https://programminghistorian.org/en/)
 
 ---
 
