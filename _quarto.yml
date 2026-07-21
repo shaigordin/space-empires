@@ -14,6 +14,8 @@ website:
   navbar:
     logo: ariel_logo_navbar.png
     right:
+      - text: "סילבוס"
+        href: syllabus.qmd
       - text: "תכנית הקורס"
         href: about.qmd
       - text: "מטלות"
