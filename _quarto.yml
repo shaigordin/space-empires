@@ -3,12 +3,6 @@ project:
   output-dir: docs
   resources:
     - datasets/assyrian_sites_starter.csv
-  # syllabus.qmd is intentionally excluded — it is the source for an offline
-  # Word document, not a web page.
-  render:
-    - "*.qmd"
-    - "resources/*.qmd"
-    - "!syllabus.qmd"
 
 filters:
   - filters/schedule.lua
