@@ -116,8 +116,10 @@ function Div(el)
         local topic = html_to_md(cell(r, "topic"))
         local topic_url = cell(r, "topic_url")
         if topic_url ~= "" then topic = "[" .. topic .. "](" .. topic_url .. ")" end
-        local datemd = "**" .. cell(r, "date") .. "** · יום " ..
-          cell(r, "day") .. "׳ · " .. cell(r, "time")
+        local day = cell(r, "day")
+        local datemd = (day ~= "")
+          and ("**" .. cell(r, "date") .. "** · יום " .. day .. "׳ · " .. cell(r, "time"))
+          or ("**" .. cell(r, "date") .. "** · " .. cell(r, "time"))
         local unit_topic = "**" .. cell(r, "unit") .. ":** " .. topic
         md[#md + 1] = "| " .. table.concat({
           cell(r, "meeting"), datemd, unit_topic,
@@ -146,9 +148,14 @@ function Div(el)
       if topic_url ~= "" then
         topic = '<a href="' .. topic_url .. '" target="_blank">' .. topic .. '</a>'
       end
+      local day = cell(r, "day")
+      local day_html = ""
+      if day ~= "" then
+        day_html = '<span class="sched-day">יום ' .. day .. '׳</span><br>'
+      end
       local date_html =
         '<span class="sched-date">' .. cell(r, "date") .. '</span><br>' ..
-        '<span class="sched-day">יום ' .. cell(r, "day") .. '׳</span><br>' ..
+        day_html ..
         '<span class="sched-time">' .. cell(r, "time") .. '</span>'
       table.insert(h, '<tr>')
       table.insert(h, '<td>' .. cell(r, "meeting") .. '</td>')
