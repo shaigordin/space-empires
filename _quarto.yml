@@ -17,7 +17,11 @@ website:
       - text: "תכנית הקורס"
         href: about.qmd
       - text: "מטלות"
-        href: assignments.qmd
+        menu:
+          - text: "חובות ומטלות הקורס"
+            href: assignments.qmd
+          - text: "סטורי-מאפ"
+            href: story-map.qmd
       - text: "מקורות, כלים, ופרויקטים"
         menu:
           - text: "מקורות ובבליוגרפיה"
